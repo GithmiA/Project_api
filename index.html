@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="login-container">
+    <div class="login-container" id="loginSection">
         <h1>Bank Loan Management</h1>
         <h2>Login</h2>
-        <form id="loginFrom">
+        <form id="loginForm">
             <label for="">Username</label>
             <input type="text" id="username" placeholder=" Enter Username">
             <label for="">Password</label>
@@ -18,6 +18,29 @@
             <button type="submit">Login</button>
         </form>
         <p id="message"></p>
+        <p>Don't have an account?
+            <a href="#" id="register">Register here</a>
+        </p>
+    </div>
+    <div class="login-container" id="registerSection" hidden>
+        <h1>Bank Loan Management</h1>
+        <h2>Register Customer</h2>
+        <form id="registerForm">
+            <label for="fullName">Full Name</label>
+            <input type="text" name="" id="fullName" required>
+            <label for="email">Email</label>
+            <input type="email" name="" id="email" required>
+            <label for="username">Username</label>
+            <input type="text" name="" id="registerUserName" required>
+            <label for="password">Password</label>
+            <input type="password" name="" id="registerPassword" required>
+
+            <button type="submit">Register</button>
+        </form>
+        <p id="registerMessage"></p>
+        <p>Already have an accout?
+            <a href="#" id="showLogin">Back to Login</a>
+        </p>
     </div>
     <script src="app.js"></script>
 </body>
